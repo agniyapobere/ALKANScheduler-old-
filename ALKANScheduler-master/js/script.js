@@ -178,7 +178,7 @@
         // course we are trying to pick
         var currCourseIdx = pickedTimesIdxs.length;
 
-        for (i = 0; i < selectedCourses[currCourseIdx].time.length; i++) {
+        for (var i = 0; i < selectedCourses[currCourseIdx].time.length; i++) {
 
             var timeToCheck = selectedCourses[currCourseIdx].time[i];
 
@@ -204,7 +204,7 @@
     // checks if interval overlaps with picked courses intervals
     function overlapsWithSelected(pickedTimesIdxs, day, start, end) {
 
-        for (i = 0; i < pickedTimesIdxs.length; i++) {
+        for (var i = 0; i < pickedTimesIdxs.length; i++) {
             var timeIdx = pickedTimesIdxs[i];
             var timeToCheck = selectedCourses[i].time[timeIdx];
 
